@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="h-[20vh] w-full flex justify-between items-center px-[6vw] border-b-[1px] boder-zinc-100">
       <div className="flex items-center h-[1vw] gap-5">
-        <h1 className="text-[2vw] font-bold">LOGO</h1>
+        <h1 className="text-[2vw] font-bold">NexusNook</h1>
         <img src={logo} alt="" />
       </div>
       <div className=" flex gap-20">
@@ -63,7 +63,7 @@ function Navbar() {
       </div>
       <div className="flex items-center gap-5 cursor-pointer">
         <Link to="/login">
-          <button className=" py-[.5vw] px-[2.5vw] border-[1px] border-black font-semibold">
+          <button className=" py-[.5vw] px-[2.5vw] border-[1px] border-black font-semibold rounded-full">
             LOGIN
           </button>
         </Link>

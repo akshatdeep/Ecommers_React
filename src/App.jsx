@@ -9,7 +9,7 @@ import LoginSiginup from "./pages/LoginSiginup";
 
 function App() {
   return (
-    <div className="min-h-[100vh] w-full">
+    <div className="min-h-[100vh] w-full overflow-hidden pb-[2vw]">
       <BrowserRouter>
         <Navbar />
         <Routes>
