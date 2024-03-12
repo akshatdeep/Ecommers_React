@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [menu, setmenu] = useState("home");
   return (
-    <div className="h-[20vh] w-full flex justify-between items-center px-[6vw] border-b-[1px] boder-zinc-100">
+    <div className="h-[13vh] w-full flex justify-between items-center px-[6vw] border-b-[1px] boder-zinc-100">
       <div className="flex items-center h-[1vw] gap-5">
         <h1 className="text-[2vw] font-bold">NexusNook</h1>
         <img src={logo} alt="" />
@@ -63,14 +63,14 @@ function Navbar() {
       </div>
       <div className="flex items-center gap-5 cursor-pointer">
         <Link to="/login">
-          <button className=" py-[.5vw] px-[2.5vw] border-[1px] border-black font-semibold rounded-full">
+          <button className=" bg-white text-black py-[.5vw] px-[2.5vw] border-[1px] border-black font-semibold transition-[0.10s] rounded-full hover:bg-black hover:text-white">
             LOGIN
           </button>
         </Link>
         <Link to="cart">
           <img src={cart} alt="" />
         </Link>
-        <div className="w-[22px] h-[22px] bg-red-600 flex justify-center items-center mr absolute right-[5%] top-[6%] rounded-full text-white">
+        <div className="w-[22px] h-[22px] bg-red-600 flex justify-center items-center mr absolute right-[5%] top-[2%] rounded-full text-white">
           0
         </div>
       </div>
