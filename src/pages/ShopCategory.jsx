@@ -4,10 +4,14 @@ import dropdown_icon from "../components/assets/dropdown_icon.png";
 import Item from "../components/Item";
 
 function ShopCategory(props) {
-  const  {all_product}  = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
   return (
     <div className="shop-category">
-      <img className="w-[82%] block my-[30px] mx-auto" src={props.banner} alt="" />
+      <img
+        className="w-[82%] block my-[30px] mx-auto"
+        src={props.banner}
+        alt=""
+      />
       <div className="ShopCategory-indexSort flex my-[0px] mx-[170px] justify-center items-center">
         <p className="font-semibold">
           <span className="font-semibold">Showing 1-12</span> out of 36 products
@@ -28,14 +32,15 @@ function ShopCategory(props) {
                 new_price={item.new_price}
                 old_price={item.old_price}
               />
-            
             );
           } else {
             return null;
           }
         })}
       </div>
-      <div className="shopcategory-loadmore flex justify-center items-center my-[150px] mx-auto w-[233px] h-[69px] rounded-[75px] bg-gray-200 text-stone-700 text-[18px] font-medium cursor-pointer">Explore more</div>
+      <div className="shopcategory-loadmore flex justify-center items-center my-[150px] mx-auto w-[233px] h-[69px] rounded-[75px] bg-gray-200 text-stone-700 text-[18px] font-medium cursor-pointer">
+        Explore more
+      </div>
     </div>
   );
 }

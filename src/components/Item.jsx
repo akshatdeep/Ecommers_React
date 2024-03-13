@@ -5,7 +5,9 @@ function Item(props) {
   // console.log(props)
   return (
     <div className="w-[300px] hover:scale-[1.05] transition-[0.6s] ">
-      <Link to={`/product/${props.id}`}><img className="h-[50vh] overflow-hidden" src={props.image} alt="" /></Link>
+      <Link to={`/product/${props.id}`}>
+        <img onClick={window.scrollTo(0,0)} className="h-[50vh] overflow-hidden" src={props.image} alt="" />
+      </Link>
       <p className="w-[15vw]">{props.name}</p>
       <div className="flex gap-[20px]">
         <div className="text-[#373F4A] text-[18px] font-medium">
